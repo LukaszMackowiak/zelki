@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabryka żelków</title>
+    <link rel="stylesheet" href="styl9.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <a href="index.html" /><img src="cukierki2.png" alt="logo fabryki">
+        </header>
+        <header>
+            <h3><a href="zamowienie.html">Zamówienie</a></h3>
+            <img src="cukierki1.png" alt="zamowienie" />
+        </header>
+        <section>
+            <h2>Zamów nasz produkt</h2>
+        </section>
+        <aside>
+            <h1>Oferta</h1>
+            <table>
+                <tr>
+                    <td>
+                        <p>Kształty</p>
+                    </td>
+                    <td>
+                        <p>Kolory</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                        <ol>
+                            <li>miś</li>
+                            <li>żabka</li>
+                            <li>serce</li>
+                        </ol>
+                        </p>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>czerwony</li>
+                            <li>niebieski</li>
+                            <li>żółty</li>
+                            <li>inny</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </aside>
+        <main>
+            <p>
+                Podaj numer kształtu:
+            </p>
+
+            <label for="ksztalt">
+                <input type="number" id="ksztalt" name="waga" size="20" required /></label>
+            <p>
+                skomponuj swój kolor, podaj RGB:
+            </p>
+            R:
+            <label for="red">
+                <input type="number" id="red" name="red" size="10" required /></label>
+
+            G:
+            <label for="green">
+                <input type="number" id="green" name="green" size="10" required /></label>
+
+            B:
+            <label for="blue">
+                <input type="number" id="blue" name="blue" size="10" required /></label>
+
+            <p></p>
+            <button>Zamów</button>
+            <p>
+                Wybrany kształt
+            </p>
+            <button>Wybrany kolor</button>
+        </main>
+        <footer>
+            <p>
+                Autor strony: <i>00000000000</i>
+            </p>
+        </footer>
+
+        <script>
+            const ksztaltZelka = document.querySelector('#ksztalt')
+            const r = document.querySelector('#red')
+            const g = document.querySelector('#green')
+            const b = document.querySelector('#blue')
+            const zamBtn = document.querySelector('button')
+            const colorBtn = document.querySelector('#kolorBtn')
+            const wybrKszt = document.querySelector('#wybrKszt')
+
+            zamBtn.addEventListener('click', function () {
+                const ksztaltVal = ksztaltZelka.value;
+                let jakiKsztalt = ''
+                if (ksztaltVal === '1') {
+                    jakiKsztalt = 'miś'
+                } else if (ksztaltVal === '2') {
+                    jakiKsztalt = 'żabka'
+                } else if (ksztaltVal === '3') {
+                    jakiKsztalt = 'serce'
+                } else {
+                    jakiKsztalt = 'inny kształt'
+                }
+
+                wybrKszt.innerHTML = `Zamówiłeś żelka: ${jakiKszałt}`
+            })
+
+            colorBtn.style.backgroundColor = `rgb(${r.value},${g.value},${b.value})`
+        </script>
+    </div>
+</body>
+
+</html>
+
+</html>

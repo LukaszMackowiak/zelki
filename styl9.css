@@ -1,0 +1,60 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  background-color: rgb(197, 85, 160);
+  text-align: center;
+  width: 50%;
+  height: 180px;
+  padding-right: 70px;
+  padding-bottom: 120px;
+  font-size: 150%;
+}
+
+section {
+  background-color: rgb(246, 226, 222);
+  text-align: center;
+  height: 100 px;
+  padding: 10 px;
+}
+
+footer {
+  background-color: rgb(246, 226, 222);
+  text-align: center;
+  height: 100 px;
+  padding: 10 px;
+  width: 100%;
+}
+
+aside {
+  background-color: rgb(197, 85, 160);
+  color: white;
+  width: 50%;
+  height: 400 px;
+}
+
+table,
+td {
+  border: 2px blue solid;
+  margin: 20px;
+  padding: 10px;
+}
+
+h2 {
+  letter-spacing: 10px;
+  font-size: 200%;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  background-color: rgb(197, 85, 160);
+  color: white;
+  width: 50%;
+  height: 400 px;
+}
